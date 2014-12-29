@@ -1,4 +1,4 @@
 Pong
 ====
 
-Pong for Arduino with OLED 128  * 64
+Pong for Arduino with OLED display 128  * 64
