@@ -1,5 +1,5 @@
 /*
-kayemk
+Created by kayemk
 */
 #include <U8glib.h>
 
@@ -163,10 +163,7 @@ void draw(void) {
 
 void update()
 {
-  /*
-  ballY += ballSX;
-  ballX += ballSY;
-   */ // Speed Button
+   // Speed Button
  if (digitalRead(6) == HIGH) {
     ballY += ballSX;
   ballX += ballSY;  
@@ -177,9 +174,6 @@ void update()
 }
 
 void setup(void) {
-
-  // flip screen, if required
-  //u8g.setRot180();
 
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
@@ -205,7 +199,7 @@ void loop(void) {
   if ( draw_state <= -20 )
     draw_state = 135;   
   
-  // rebuild the picture after some delay
+  // rebuild after delay
   delay(10);
 
 }
